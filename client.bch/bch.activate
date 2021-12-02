@@ -1,0 +1,3 @@
+blessed.bch install -q
+echo $BCH_HISTORY_DST
+export ZJOT_ACC=${BCH_HISTORY_DST}/zjot/acc

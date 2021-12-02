@@ -1,0 +1,6 @@
+[ -d $BCH_HISTORY_DST ] && {
+    [ "$1" = "-q" ] || echo bch.install: already installed.
+    }||{
+    git clone ${BCH_HISTORY_SRC} ${BCH_HISTORY_DST}
+}
+poet.blessed.install zjot
