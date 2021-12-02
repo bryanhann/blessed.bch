@@ -1,4 +1,4 @@
 #!/bin/bash
 export BCH_HISTORY_SRC=git@github.com:bryanhann/bch.history
-export BCH_HISTORY_DST=${HOME}/_bch.history
+export BCH_HISTORY_DST=${HOME}/__bch__
 ${__BLESSED_DOT__} ${__BLESSED_CLIENT__}.$*
