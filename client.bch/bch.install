@@ -3,4 +3,4 @@
     }||{
     git clone ${BCH_HISTORY_SRC} ${BCH_HISTORY_DST}
 }
-poet.blessed.install zjot
+poet.install zjot
