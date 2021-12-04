@@ -7,7 +7,7 @@ main () {
     [ -d $D ] || git clone ${S} ${D}
 }
 
-echo "[blessed.bch]: BCH_HISTORY == [$BCH_HISTORY]"
+echo "# [blessed.bch]: BCH_HISTORY == [$BCH_HISTORY]"
 
 poet.bless -i zjot
 export ZJOT_ACC=${BCH_HISTORY}/zjot/acc
