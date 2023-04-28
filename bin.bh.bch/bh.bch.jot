@@ -1,0 +1,3 @@
+#/bin/sh
+. bh.bch.env.source
+bh.jot --acc $BRYAN/zjot/acc $*

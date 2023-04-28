@@ -1,0 +1,17 @@
+#/bin/sh
+echo BRYAN is [$BRYAN]
+. bh.bch.env.source
+echo BRYAN is [$BRYAN]
+
+[ -d $BRYAN ] || {
+    git clone git@github.com:bryanhann/bch.history $BRYAN
+}
+
+_clone () {
+    local REPOS=${STEVE}/repos
+    local src=${GITHUB}/$1
+    local dst=${REPOS}/$1
+    [ -d $dst ] || git clone -b steve $src $dst
+    [ -d $dst ] || git clone $src $dst
+}
+
