@@ -1,0 +1,3 @@
+#/bin/sh
+. bh.bch!activate
+bh.jot --acc ${BH_BCH_HISTORY}/zjot/acc $*
