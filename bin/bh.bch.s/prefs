@@ -1,0 +1,8 @@
+alias .z="bh.bch.zjot new"
+alias gobch="cd ${STEVE}/__REPOS__/blessed.bch/bin"
+alias gozjot="cd ${BH_BCH_HISTORY}/zjot"
+gobin () {
+    which bh.$1 && cd $(dirname $(which bh.$1))
+}
+alias prefs="source bh.bch prefs"
+echo PREFS are sourced.

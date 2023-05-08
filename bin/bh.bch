@@ -1,0 +1,35 @@
+#!/bin/bash
+ZERO=${0}
+export BASE_NAME=bh.bch
+export BASE_PATH=$(which ${BASE_NAME})
+
+HANDLE_CALL () {
+   [ -f ${BASE_PATH}.d/$1 ] && {
+        ${BASE_PATH}.d/$*
+   } || {
+       echo "Try '$BASE_NAME help'"
+   }
+   return    
+   FILE=$1
+   shiftSCRIPT=$1.d/$2
+   shift 2
+   [ -f $SCRIPT ] || {
+        echo "$DONAME: missing command: $(basename $SCRIPT)"
+        echo try $DONAME help
+        return
+    }
+    echo DO ${SCRIPT} $*
+}
+
+HANDLE_SOURCE () {
+    [ -f ${BASE_PATH}.s/$1 ] && {
+        source ${BASE_PATH}.s/$*
+    } || {
+        echo "${BASE_NAME}:"
+        echo "    cannot source '$1' in [./${BASE_NAME}.s]"
+        echo "    Try '$BASE_NAME help'"
+    }
+    
+}
+[ "${ZERO:0:1}" == "/" ] && { HANDLE_CALL $*; } || { HANDLE_SOURCE $*; }
+
