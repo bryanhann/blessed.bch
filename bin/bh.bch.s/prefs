@@ -1,4 +1,4 @@
-alias .z="bh.bch.zjot new"
+alias .z="bh.bch zjot new"
 alias gobch="cd ${STEVE}/__REPOS__/blessed.bch/bin"
 alias gozjot="cd ${BH_BCH_HISTORY}/zjot"
 gobin () {
