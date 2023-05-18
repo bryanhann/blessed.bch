@@ -1,0 +1,12 @@
+#!/bin/bash
+. bh.bch:functions
+___addtopath $(dirname $(which bh.bch))/mybin
+
+alias .z="bh.bch.zjot new"
+alias prefs="source bh.bch:prefs"
+sugar      () { med bg=${1}; }
+concerta   () { med concerta=${1}; }
+humalog    () { med humalog=${1}; }
+tresiba    () { med tresiba=${1}; }
+med () { bh.bch.zjot new [med] $*; }
+echo bh.bch:prefs loaded

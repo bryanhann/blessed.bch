@@ -1,0 +1,9 @@
+#!/bin/bash
+___onpath () {
+    echo $PATH | grep ${1} > /dev/null 2> /dev/null
+    return $?
+}
+___addtopath () {
+    ___onpath ${1} && return
+    export PATH=${PATH}:${1}
+}

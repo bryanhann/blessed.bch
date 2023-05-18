@@ -1,6 +1,0 @@
-echo USAGE:
-echo "    $BASE_NAME SUBCOMMAND"
-echo "SUBCOMMANDS:"
-for file in $(ls ${BASE_PATH}.d); do
-    echo "    $file"
-done
