@@ -1,9 +1,0 @@
-export BH_BCH_HISTORY=${STEVE}/__BRYAN__
-
-[ -d ${BH_BCH_HISTORY} ] || {
-   echo bh.bch!activate: CLONING PERSONAL HISTORY to [$BH_BCH_HISTORY}
-   echo
-   git clone git@github.com:bryanhann/bch.history $BH_BCH_HISTORY
-}
-
-source bh.bch!prefs

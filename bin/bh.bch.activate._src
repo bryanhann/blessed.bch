@@ -1,0 +1,8 @@
+#!/bin/bash
+export BH_BCH_HISTORY=${STEVE}/__BRYAN__
+export BH_BCH_HISTORY_SRC=git@github.com:bryanhann/bch.history
+echo 6666666 $BH_BCH_HISTORY
+[ ! -d $BH_BCH_HISTORY ] && {
+    git clone $BH_BCH_HISTORY_SRC $BCH_HISTORY
+}
+source bh.bch.prefs._src
