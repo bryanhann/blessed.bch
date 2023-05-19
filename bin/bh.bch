@@ -1,8 +1,4 @@
 #!/bin/bash
-NAME=$(basename $0)
-ROOT=$(dirname $0)
-echo The [$NAME] command suite.
-for file in $(ls $(dirname $0)/bh.* ); do
-    [ -f ${ROOT}/${NAME} ] || continue
-    echo "    $(basename ${file})"
-done
+steve.bh.help $0 $*
+#desc Personal convenience, and control of personal history
+#doc Print this help

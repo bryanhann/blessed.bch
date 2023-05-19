@@ -10,3 +10,4 @@ humalog    () { med humalog=${1}; }
 tresiba    () { med tresiba=${1}; }
 med () { bh.bch.zjot new [med] $*; }
 echo bh.bch:prefs loaded
+#doc add aliases and quick zjot functions

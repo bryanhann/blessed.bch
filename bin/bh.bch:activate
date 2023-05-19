@@ -8,3 +8,5 @@ export BH_BCH_HISTORY_SRC=git@github.com:bryanhann/bch.history
 }
 
 . bh.bch:prefs
+
+#doc Clone personal history and load prefs

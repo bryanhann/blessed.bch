@@ -7,3 +7,5 @@ ___addtopath () {
     ___onpath ${1} && return
     export PATH=${PATH}:${1}
 }
+
+#doc Misc functions
