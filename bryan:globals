@@ -1,0 +1,3 @@
+#/bin/bash
+export BRYAN_ROOT=$(dirname $(dirname $0))
+

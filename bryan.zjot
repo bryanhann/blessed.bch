@@ -1,0 +1,4 @@
+#/bin/bash
+. bryan:globals
+bh.zjot --acc ${BRYAN_ROOT}/zjot/acc $*
+
