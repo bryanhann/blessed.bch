@@ -1,12 +1,13 @@
 #!/bin/bash
+export BRYAN=~/.BRYAN
 
-export BH_BCH_HISTORY=${STEVE}/__BRYAN__
-export BH_BCH_HISTORY_SRC=git@github.com:bryanhann/bch.history
-
-[ ! -d $BH_BCH_HISTORY ] && {
-    git clone $BH_BCH_HISTORY_SRC $BCH_HISTORY
+main () {
+    local SRC=git@github.com:bryanhann/bch.history
+    [ -d ${BRYAN} ] && return
+    git clone ${SRC} ${BRYAN}
 }
 
+main
 . bh.bch:prefs
 
 #doc Clone personal history and load prefs
