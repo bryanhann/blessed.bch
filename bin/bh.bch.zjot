@@ -1,4 +1,0 @@
-#/bin/sh
-bh.zjot --acc ${BRYAN}/zjot/acc $*
-
-#doc Call bh.zjot with personal history

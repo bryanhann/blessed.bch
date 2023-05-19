@@ -1,13 +1,4 @@
 #!/bin/bash
-export BRYAN=~/.BRYAN
-
-main () {
-    local SRC=git@github.com:bryanhann/bch.history
-    [ -d ${BRYAN} ] && return
-    git clone ${SRC} ${BRYAN}
-}
-
-main
 . bh.bch:prefs
 
 #doc Clone personal history and load prefs
