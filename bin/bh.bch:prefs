@@ -1,9 +1,39 @@
 #!/bin/bash
+#doc add aliases and quick zjot functions
+
+export BCH_LBIN=${HOME}/.local/bin/BCH_LBIN
+[ -d $BCH_LBIN ] && mkdir $BCH_LBIN
+. steve.path:add $BCH_LBIN
 alias .z="bryan.zjot new"
 alias prefs="source bh.bch:prefs"
-sugar      () { med bg=${1}; }
-concerta   () { med concerta=${1}; }
-humalog    () { med humalog=${1}; }
-tresiba    () { med tresiba=${1}; }
-med () { bryan.zjot new [med] $*; }
-#doc add aliases and quick zjot functions
+alias .dd="bh.deedoo answer"
+
+alias die="touch ~/die"
+.bg    () { .med bg=${1}; }
+.con   () { .med concerta=${1}; }
+.ins   () { .med humalog=${1}; }
+.long  () { .med tresiba=${1}; }
+.med () { bryan.zjot new [med] $*; }
+.food () { bryan.zjot new [food] $*; }
+
+bh. () {
+    .cd bh.$*
+}
+.cd () {
+    X=
+    [ "$1" == dots  ] && { cd ${STEVE}/dots; return; }
+    [ "$1" == steve ] && { cd ${STEVE}/bin; return; }
+    [ -z "$X" ] && X=$(which $1)
+    [ -z "$X" ] && echo .go: bad $1
+    [ -z "$X" ] && return
+    cd $(dirname $X)
+}
+
+bclone () { git clone git@github.com:bryanhann/bryan.$*; }
+gclone () { git clone git@github.com:bryanhann/$* ; }
+
+for stop in $(bh.deedoo stoppers); do
+    #alias .${stop}="bh.bch.answer-deedoo ${stop}"
+    alias .${stop}="bh.deedoo answer ${stop}"
+done
+
