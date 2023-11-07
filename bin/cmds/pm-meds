@@ -1,0 +1,9 @@
+#!/bin/bash
+[med] \
+    PM: \
+    mirtazapine=15 \
+    famotidine=20 \
+    trebisca=28\
+    zopiclone=7.5 \
+
+

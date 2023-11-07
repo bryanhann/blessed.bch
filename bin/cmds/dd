@@ -1,0 +1,10 @@
+#!/bin/bash
+is_stopper () {
+    [ "$1" == "" ] && return 1
+    bh.deedoo stoppers | grep "^${1}$" >/dev/null || return 2
+}
+stopper=$1
+shift
+is_stopper $stopper || exit $?
+bh.deedoo answer $stopper
+bryan.zjot new  [deedoo] $stopper $*

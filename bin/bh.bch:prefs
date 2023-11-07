@@ -6,16 +6,16 @@ export BCH_LBIN=${HOME}/.local/bin/BCH_LBIN
 . steve.path:add $BCH_LBIN
 alias .z="bryan.zjot new"
 alias prefs="source bh.bch:prefs"
-alias .dd="bh.deedoo answer"
 
+alias .dd=".bh dd "
 alias die="touch ~/die"
 .bg    () { .med bg=${1}; }
-.con   () { .med concerta=${1}; }
-.ins   () { .med humalog=${1}; }
-.long  () { .med tresiba=${1}; }
 .med () { bryan.zjot new [med] $*; }
 .food () { bryan.zjot new [food] $*; }
-
+.bh () {
+    $(which .bh) $*
+    [ "$1" == "" ] && alias
+}
 bh. () {
     .cd bh.$*
 }
@@ -31,9 +31,4 @@ bh. () {
 
 bclone () { git clone git@github.com:bryanhann/bryan.$*; }
 gclone () { git clone git@github.com:bryanhann/$* ; }
-
-for stop in $(bh.deedoo stoppers); do
-    #alias .${stop}="bh.bch.answer-deedoo ${stop}"
-    alias .${stop}="bh.deedoo answer ${stop}"
-done
 
