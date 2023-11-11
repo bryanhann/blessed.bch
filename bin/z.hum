@@ -1,0 +1,2 @@
+#!/bin/bash
+z.med humulog=$1
