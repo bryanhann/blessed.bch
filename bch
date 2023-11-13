@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+bin=$(dirname $(readlink $0))/bin
+
+[ -f $bin/$1 ] && { $bin/"$@" ; exit $? ; }
+
+_ls () { for x in $(ls $1); do echo "    $x" ;  done ; }
+
+cat <<HEREDOC
+USAGE:
+    bch CMD
+CMDS:
+$(_ls $bin)
+HEREDOC
