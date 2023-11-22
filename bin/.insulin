@@ -1,2 +1,2 @@
 #!/bin/bash
-z.med humulog=$1
+.med "humulog=$1"

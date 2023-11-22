@@ -1,2 +1,2 @@
 #!/bin/bash
-bryan.zjot new
+bryan.zjot new "$@"

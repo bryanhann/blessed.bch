@@ -1,5 +1,5 @@
 #!/bin/bash
-z.med \
+.med \
     PM: \
     mirtazapine=15 \
     famotidine=20 \
