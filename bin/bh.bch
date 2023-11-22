@@ -1,4 +1,0 @@
-#!/bin/bash
-steve.bh.help $0 $*
-#desc Personal convenience, and control of personal history
-#doc Print this help

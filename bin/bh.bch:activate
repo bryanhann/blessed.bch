@@ -1,4 +1,0 @@
-#!/bin/bash
-. bh.bch:prefs
-
-#doc Clone personal history and load prefs
