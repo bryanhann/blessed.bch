@@ -1,0 +1,4 @@
+#!/bin/bash
+#doc add aliases and quick zjot functions
+
+.med bg=${1}
