@@ -1,7 +1,5 @@
 #!/bin/bash
 .med \
     AM: \
-    concerta=54 \
-    ASA=81\
-    losartan=50\
-    caffeine=200
+    concerta=54
+
