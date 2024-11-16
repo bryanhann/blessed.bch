@@ -1,0 +1,3 @@
+#!/bin/bash
+trebisca=32
+.med "concerta=$1"

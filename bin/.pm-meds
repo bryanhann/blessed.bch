@@ -1,10 +1,12 @@
 #!/bin/bash
 .med \
     PM: \
-    mirtazapine=15 \
-    trentellix=5\
-    famotidine=20 \
-    trebisca=30\
+    trintellix=5\
+    omeprazole=20 \
     atorvastatin=40\
+    mirtazapine=15 \
     ASA=81\
     losartan=50\
+
+    #trebisca=34\
+

@@ -1,0 +1,2 @@
+#!/bin/bash
+.med "trazodone=$1 (long insulin)"
